@@ -1,72 +1,195 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="design/style.css" rel="stylesheet" type="text/css" />
-</head>
-
-
-  <header>
-    <h1>Emily Cordero </h1>
-  </header>
-<body>
-  <nav class="navbar">
-    <a href="index.html">
-      <img src="icons/pagehome.png" alt="logo-home">
-      <p >Emily Cordero</p>
-    </a>
-       
-    
-  </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&family=Sanchez&display=swap" rel="stylesheet">
+      <title>Emily Cordero</title>
+    <link href="design/style.css" rel="stylesheet" type="text/css" />
+  </head>
   
-  <script src="script.js"></script>
+  <body>
+      <header id="barra">
+          <a href="index.html" ></a>
+            <!--
+                <img src="icons/pagehome.png" alt="logo-home">
+            -->
+            <p id="name">Emily Cordero</p>
+        </header>
  
-  <article>
-    <section id="Informacion">
-    <div class="imagenBox">
-      <img src="icons/programmer1.png" alt="codificando" width=220>
-    </div>
-    <div class="texto">
-    <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <a class="boton" href="about.html">Sobre mí</a><br>
-    <a class="boton" href="contact.html">Contacto</a><br>
-    <a class="boton" href="portfolio.html">Portafolio</a><br>
-    </div>
-    <div class="imagenBox">
-      <img src="icons/programmer2.png" alt="codigo" width=220>
-    </div>
-      </section>
+  <section id="Informacion">
 
-    <section id="about">
-      <div></div>
-      <h4 class="tituloSeccion">Acerca de mí</h4>
-      <p>qui dolorem ipsum, quia dolor sit amet consectetur adipisci velit, sed quia     non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam           quaerat voluptatem</p>
-      
+      <div class="tituloSeccion">Informacion</div>
+      <div class="imagenBox1">
+        <img src="icons/programmer1.png" alt="codificando" width="20%">
+      </div>
+      <div class="texto">
+        <div class ="box3">
+          <p class="descripcion"> Estudiante de ingenieria en computacion. Nacimiento el 25 de agosto de 2001.
+            Nacida en Guayaquil, Ecuador. Me gusta salir a lokear con mis amigos los jueves.
+            No sé que más poner porque aún no me inspiro para escribir. Sólo me estoy concentrando
+            en el diseño de esta página.
+          </p>
+        </div>
+      </div>
+            <br>
+          <a class="boton" href="#about">Sobre mí</a><br>
+          <a class="boton" href="#portafolios">Portafolio</a><br>
+          <a class="boton" href="#Contacto">Contacto</a><br>
+      </div>
+      <div class="imagenBox2">
+        <img src="icons/programmer2.png" alt="codigo" width="400">
+      </div>
     </section>
-    
+
+
+    <!-- Seccion acerca de mi probada-->
+    <section id="About">
+      <header class="tituloSeccion">Acerca de mi</header>
+      <div class="container4">
+          <div class="foto">
+              <img src="icons/EmilyPresentacion.jpeg" alt="Retrato Emily Cordero" class="fotoEmily">
+          </div>
+          <div class="datosEmily">
+          <p>
+                  Mi nombre completo es Emily Cordero Sabando. Nací en agosto de 2001 en Guayaquil, Ecuador. Actualmente, soy estudiante de Ingeniería en computación 
+                  en una de la Universidad de más prestigio de mi país, la Escuela Superior Politécnica del Litoral, también conocida como ESPOL.
+                  En un futuro, me gustaría especializarme en ciencia de datos.<br>
+                  Me considero autodidacta cuando me llama mucho la atención un tema. Disfruto trabajar en equipo, pues siento que siempre aprendes de los demá
+              su forma de ver los problemas y los conocimientos que te puedan aportar.<br> </p>
+          </div>
+          <div class="datosTabla">
+
+                  
+                  <table class="tabla">
+                      <tr>
+                          <th>Reconocimientos</th>
+                          <td>
+                              <ul>
+                                  <li>Mención de honor “Abanderada del Pabellón Nacional” en el periodo lectivo 2018-2019.</li>
+                                  <li>Medalla de la Benemérita Sociedad Filantrópica del Guayas al mejor promedio en los años 2017, 2018 y 2019</li>
+                              </ul>
+                          </td>
+                      </tr>
+                      <tr>
+                          <th>Certificados</th>
+                          <td>
+                              <ul>
+                                  <li>Cisco CCNAv7: Introducción a Redes.</li>
+                                  <li>FreeCodeCamp Data Visualization.</li>
+                                  <li>Anáuach:Fundamentos y construcción de modelos de predicción con Machine Learning</li>
+                              </ul>
+                          </td>
+                      </tr>
+                  </table>
+              </p>
+          </div>
+      </div>
+
+  </section>
+
+
+<!-- Seccion portafolio probada-->
     <section id="portafolios">
-      <h4 class="tituloSeccion">Portafolio</h4>
-      <div class="proyecto">
-        <p>Proyecto 1</p>
+      <header class="tituloSeccion">Portafolio</header>
+    <div class="container">
+      <div class="card">
+          <div class="slide slide1">
+              <div class="content">
+                  <div class="icon">
+                     <p class="fa">Proyecto 1</p>
+                  </div>
+              </div>
+          </div>
+          <div class="slide slide2">
+              <div class="content">
+                  <h3>
+                      Hello there!
+                  </h3>
+                  <p>Aquí va un primer proyecto terminado</p>
+                  
+              </div>
+          </div>
       </div>
-      <div class="proyecto">
-        <p>Proyecto 2</p>
+
+    <div class="card">
+        <div class="slide slide1">
+            <div class="content">
+                <div class="icon">
+                   <p class="fa">Proyecto 2</p>
+                </div>
+           </div>
+        </div>
+        <div class="slide slide2">
+            <div class="content">
+                <h3>
+                    Hello there!
+                </h3>
+                <p>Aquí va un segundo proyecto terminado</p>
+            </div>
+        </div>
+    </div>
+  <div class="card">
+      <div class="slide slide1">
+          <div class="content">
+              <div class="icon">
+                 <p class="fa">Proyecto 3</p>
+              </div>
+          </div>
       </div>
-      <div class="proyecto">
-        <p>Proyecto 3</p>
+      <div class="slide slide2">
+          <div class="content">
+              <h3>
+                  Hello there!
+              </h3>
+              <p>Aquí va un tercer proyecto terminado</p>
+          </div>
       </div>
-      <div class="proyecto">
-        <p>Proyecto 4</p>
+  </div>
+</div>
+    </section>
+
+<!-- Seccion probada de Contacto-->
+
+    <section id="Contacto">
+      <header class="tituloSeccion">Contacto</header>
+      <div class="container2">
+      <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0151653905828!2d-79.96905407705668!3d-2.1478801934265856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1654642779276!5m2!1ses-419!2sec" 
+              width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          </div>
+          <div class="formulario">
+              <p>Nombres y Apellido:</p>
+              <input type="text" placeholder="Ingresar nombre" maxlength="8" required>
+              <p>Correo Electrónico: </p>
+              <input type="email" placeholder="Ingresar correo" required>
+              <p>Mensaje</p>
+              <textarea name="comentarios" rows="10" cols="40">Escribe aquí el mensaje</textarea>
+              <p><button type="submit">Enviar</button></p>
+          </div>
       </div>
     </section>
-  </article>
 
-  <aside>
-    <img src="https://img.freepik.com/vector-gratis/programador-freelance-mujer-personaje-trabajo-computadora-personal-ocupacion-femenina-desarrollador-web-profesional-aislado-blanco-ilustracion-dibujos-animados_169479-916.jpg" width="200">
-  </aside>
+    <!--
+    <section id="Contacto">
+      <header class="tituloSeccion">Contacto</header>
+      <div class="imagenBox3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0151653905828!2d-79.96905407705668!3d-2.1478801934265856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1654642779276!5m2!1ses-419!2sec" 
+        width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p>Nombres y Apellido:</p>
+      <input type="text" placeholder="Ingresar nombre" maxlength="8" required>
+      <p>Correo Electrónico: </p>
+      <input type="email" placeholder="Ingresar correo" required>
+      <p>Mensaje</p>
+      <textarea name="comentarios" rows="10" cols="40">Escribe aquí el mensaje</textarea>
+    </section>
+
+-->
 
   <footer>
     <p>Elaborado por: Emily Cordero</p>
