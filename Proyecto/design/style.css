@@ -10,9 +10,9 @@
 
 #barra{
   background-color: white;
-  text-align: center;
   width: 100%;
   position: fixed;
+  display: inline;
   z-index: 100;
 }
 
@@ -31,8 +31,13 @@
 
 #name{
   font-family: 'Pacifico', cursive;
+  text-align: center;
 }
 
+.botonhome{
+  float: left;
+  padding-left: 6px;
+}
 /*estilos seccion inicio*/
 
 .container3{
@@ -105,14 +110,19 @@
 
 .container4>.foto{
   grid-area: caja1;
+  display: flex;
+  align-items: center;
+  
+  padding: 30px 10px 30px 40px;
+  /*
   padding-top: 40px;
   padding-left: 150px;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 40px;*/
 }
 
 .container4 .foto .fotoEmily{
-  max-width: 96%;
+  max-width: 86%;
   height: auto;
   box-shadow: 20px 20px rgba(0,0,0,.15);
   transition: all .4s ease;
@@ -129,15 +139,14 @@ p, .tabla{
 
 
 .container4>.datosEmily{
-  padding: 30px 150px 10px 40px;
+  padding: 30px 150px 0px 40px;
   grid-area: caja2;
   display: flex;
   align-items: center;
 }
 
 .container4>.datosTabla{
-  padding: 3px 150px 10px 40px;
-  background-color: azure;
+  padding: 0px 150px 10px 40px;
   grid-area: caja3;
   display: flex;
   align-items: center;
@@ -145,9 +154,14 @@ p, .tabla{
 }
 
 .tabla{
-  border-collapse: collapse;
-  table-layout: fixe;
+  border-collapse: separate;
 }
+.lista{
+
+  padding-bottom: 13px;
+  padding-left: 30px;
+}
+
 .enlacePg {
   box-shadow: inset 0 0 0 0 #B39DB3;
   color: white;
@@ -166,6 +180,48 @@ body{
   row-gap: 0.5rem;
   column-gap: 0.5rem;
 }
+
+
+/*ventana emergente*/
+#cerrar{
+  float:inline-start;
+  left: 30%;
+}
+.button2 {background-color: #008CBA;
+  color: #fff;
+    margin-top: 5px;
+    margin-right: 40px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    float: right;}
+
+#popupBody{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  
+}
+.overlay { 
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target{
+  visibility: visible;
+  opacity: 1;
+}
+
   /*
   
 */
@@ -182,6 +238,7 @@ body{
 }
 
 .imagenBox1{
+  background-color: aqua;
   grid-column-start: x0;
   grid-column-end: x1;
   grid-row: y1;
@@ -205,6 +262,10 @@ body{
   padding: 10px;
 }
 
+
+
+
+/*Seccion de Potafolio*/
 #portafolios{
   display: grid;
   grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
@@ -323,15 +384,22 @@ body{
 @media (max-width: 600px) {
   .container{
       display: grid;
+      height:100vh;
+      overflow: scroll;
   }
 
   .container .card .icon .fa {
-      font-size: 20px;
+      font-size: 18px;
   }
   .container .card .slide {
       width: 200px;
       height: 140px;
   }
+
+  .container .card .slide.slide2 .content h3 {
+    font-size: 18px;
+  } 
+  
 }
 
 /*Estilo de seccion Contacto*/
@@ -401,3 +469,12 @@ body{
   }
 }
 
+#footer{
+  padding: 13px;
+  background-color: #6e456e;
+  color: #DFE4D8;
+}
+#footer > p{
+  
+  text-align: center;
+}

@@ -12,14 +12,12 @@
   </head>
   
   <body>
-      <header id="barra">
-          <a href="index.html" ></a>
-              <!--<img src="icons/pagehome.png" href="#Informacion" alt="logo-home">
-              -->
-            <p id="name">Emily Cordero</p>
-        </header>
+      <nav id="barra">
+          <a href="index.html" ><img src="icons/pagehome.png" class="botonhome" href="#Informacion" alt="logo-home" height="30px"></a>  
+            <h3 id="name">Emily Cordero</h3>
+        </nav>
  
-        <section id="Informacion">
+        <section id="Información">
             <br>
             <br>
             <header class="tituloSeccion">Informacion</header>
@@ -29,11 +27,13 @@
                 <!--  for demo purposes only and its shit  -->
                 <div class="user-login-box">
                   <div class="user-name">
-                    Hola!, mi nombre es Emily. Soy estudiante de Ingeniería en computación.  </p>
+                    ¡Hola!, mi nombre es Emily. Soy estudiante de Ingeniería en computación.  </p>
                                 <br>
                               <a class="enlacePg" href="#About">Sobre mí</a><br><br>
                               <a class="enlacePg" href="#portafolios">Portafolio</a><br><br>
                               <a class="enlacePg" href="#Contacto">Contacto</a><br><br>
+                              <a href="https://github.com/eacorsab" target="_blank"><img src="icons/github-icon.png" alt="icon de github0" width="36px"> </a> 
+                                <a href="https://pin.it/rvveoND" target="_blank" > <img src="icons/pinterest-icono.png" alt="icon de github0" width="36px"></a>
                   </div>
                 </div>
             </div> 
@@ -54,16 +54,26 @@
                   en una de la Universidad de más prestigio de mi país, la Escuela Superior Politécnica del Litoral, también conocida como ESPOL.
                   En un futuro, me gustaría especializarme en ciencia de datos.<br>
                   Me considero autodidacta cuando me llama mucho la atención un tema. Disfruto trabajar en equipo, pues siento que siempre aprendes de los demá
-              su forma de ver los problemas y los conocimientos que te puedan aportar.<br> </p>
-          </div>
+              su forma de ver los problemas y los conocimientos que te puedan aportar.<br>
+                Mi hobbie favorito es el cheerleading. Actualmente, pertenezco al club de Cheerleading de mi universidad. 
+                <a href="#popup" class="button2"> Ver video</a></p>
+            <div id="popup" class="overlay">
+            <div id="popupBody">
+                <a id="cerrar" href="#About"><img src="icons/x-icon.png" height="20px"></a><br>
+                <iframe width="560" height="355" src="https://www.youtube.com/embed/extwy4UkM8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe> 
+                
+            </div>
+        </div>
+                
+            </div>
           <div class="datosTabla">
 
                   
-                  <table class="tabla">
+                  <table class="tabla" >
                       <tr>
                           <th>Reconocimientos</th>
                           <td>
-                              <ul>
+                              <ul class="lista">
                                   <li>Mención de honor “Abanderada del Pabellón Nacional” en el periodo lectivo 2018-2019.</li>
                                   <li>Medalla de la Benemérita Sociedad Filantrópica del Guayas al mejor promedio en los años 2017, 2018 y 2019</li>
                               </ul>
@@ -71,10 +81,9 @@
                       </tr>
                       
                       <tr>
-                        
                           <th>Certificados</th>
                           <td>
-                              <ul>
+                              <ul class="lista">
                                   <li>Cisco CCNAv7: Introducción a Redes.</li>
                                   <li>FreeCodeCamp Data Visualization.</li>
                                   <li>Anáuach:Fundamentos y construcción de modelos de predicción con Machine Learning</li>
@@ -82,7 +91,7 @@
                           </td>
                       </tr>
                   </table>
-              </p>
+             
           </div>
       </div>
 
@@ -188,9 +197,10 @@
 
 -->
 
-  <footer>
+  <footer id="footer">
     <p>Elaborado por: Emily Cordero</p>
-    <p>Contacto: emascord@espol.edu.ec</p>
+    <p>Contacto: emascord@espol.edu.ec</p> 
+
   </footer>
 </body>
 
